@@ -14,7 +14,7 @@ jobs:
       - name: Install, Eslint, build 🔧
         run: |
           npm install
-          npm run eslint
+          npm run eslint -- --max-warnings 0
           npm run build
 
       - name: Deploy 🚀
